@@ -60,15 +60,15 @@ refeClientes.on("value", function(snap) {
 
                         '<div class="col-sm-4">'+    
           
-                            '<div class="card card-pricing card-raised">'+
+                            '<div class="card card-product">'+
                                 
-                              '<div class="card-body">'+
+                              '<div class="card-body"> <div class="card-image" data-header-animation="true">'+
 
-                                  '<h3 class="card-title">'+datosArray[documento].nombre+' </h3>'+
+                              '<img class="img" src="'+datosArray[documento].urlImg+'" /> </div>' +   
+                              
+                              '<h3 class="card-title">'+datosArray[documento].nombre+' </h3> '+
 
-                                  '<img class="img" src="'+datosArray[documento].urlImg+'" />' +
-
-                                  '<p class="card-description">$ '+ datosArray[documento].precio +'</p>'+
+                              '<p class="card-description">$ '+ datosArray[documento].precio +'</p>'+
 
                              '</div>'+
                                        
